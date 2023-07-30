@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    overflow-x: none;
+    background-color: #104b0f;
+background-image: linear-gradient(160deg, #104b0f 0%, #104b0f 100%);
+
+}
+
+.navcontainer{
+    width: 100vw;
+    background-color: #21D4FD;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #bdc6c0 100%);
+
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+}
+
+nav{
+    width: 100%;
+}
+
+#navlist{
+    padding: 15px;
+    width: 100%;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navlogo{
+    font-size: 2.8rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+#navitems{
+    display: flex;
+    gap: 60px;
+}
+
+.footerbox{
+    background-color: #21D4FD;
+    background-image: linear-gradient(160deg, #000000 0%, #bdc6c0 100%);
+    text-align: center;
+    padding: 0px;
+}
+
+.footerbox p{
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentbox{
+    width: 50%;
+    margin: auto;
+    background-color: #efed32;
+    background-image: linear-gradient(160deg, #efed32 0%, #ed0206 100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 1px 1px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px;
+}
+
+.rightbox img{
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 0px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightbox:hover{
+    transform: scale(1.1);
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+.rightbox{
+    top: 30px;
+    right: 10px;
+    position: relative;
+    transition: all 0.3s linear 0s;
+    box-shadow: 0px 0px 40px white;
+    border-radius: 20px;
+}
+
+.leftbox h2{
+    font-size: 4rem;
+}
+
+.leftbox h3{
+    font-size: 3rem;
+}
+
+.all{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 300px;
+    background-color: rgba(86, 79, 79, 0.638);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+
+.rightbox .overlay span{
+    color: white;
+}
+
